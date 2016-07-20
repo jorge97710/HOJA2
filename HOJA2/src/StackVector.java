@@ -11,6 +11,8 @@ public class StackVector<E>
 		data = new ArrayList<E>();
 	}
 
+	
+	
 	public void push(E item)
 	// post: the value is added to the stack
 	//          will be popped next if no intervening push
@@ -43,4 +45,6 @@ public class StackVector<E>
 	{
 		return size() == 0;
 	}
+	
+	
 }
