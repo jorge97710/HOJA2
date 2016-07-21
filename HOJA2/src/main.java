@@ -9,7 +9,7 @@ public class main {
 
 	 public static void main(String[] args) throws IOException {
 
-		 muestraContenido("/home/mario/archivo.txt");
+		 muestraContenido("/home/archivo.txt");
 	   		 
 		    
 		/*    
