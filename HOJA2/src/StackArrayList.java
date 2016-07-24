@@ -2,16 +2,13 @@ import java.util.ArrayList;
 
 
 /**
- * * Clase que implementa la interfaz Stack, es la que contiene las funciones usadas en el main.
- * 	@author Carlos Calderon, 15219
- *  @author Jorge Azmitia,15202
- *  @author javier jo 
- * 	@version 1.3 Julio 23, 2016
- *
+ * * Clase que implementa la interfaz Stack, 
+ * 	@author UVG
+ * 	@version 1.4 Julio 24, 2016
  */
 public class StackArrayList<E> implements Stack<E>
 {
-	//atributos
+	 /* Atributos */
 	protected ArrayList<E> data;
 
 	public StackArrayList()
