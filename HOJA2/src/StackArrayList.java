@@ -1,18 +1,25 @@
 import java.util.ArrayList;
 
-public class StackVector<E>
- implements Stack<E>
+
+/**
+ * * Clase que implementa la interfaz Stack, es la que contiene las funciones usadas en el main.
+ * 	@author Carlos Calderon, 15219
+ *  @author Jorge Azmitia,15202
+ *  @author javier jo 
+ * 	@version 1.3 Julio 23, 2016
+ *
+ */
+public class StackArrayList<E> implements Stack<E>
 {
+	//atributos
 	protected ArrayList<E> data;
 
-	public StackVector()
+	public StackArrayList()
 	// post: constructs a new, empty stack
 	{
 		data = new ArrayList<E>();
 	}
 
-	
-	
 	public void push(E item)
 	// post: the value is added to the stack
 	//          will be popped next if no intervening push
@@ -45,6 +52,4 @@ public class StackVector<E>
 	{
 		return size() == 0;
 	}
-	
-	
 }
