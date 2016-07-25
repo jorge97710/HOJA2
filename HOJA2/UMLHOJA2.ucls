@@ -1,45 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class-diagram version="1.1.10" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
-  associations="true" dependencies="false" nesting-relationships="true">  
-  <class id="1" language="java" name="MainCalculadora" project="HOJA2" file="/HOJA2/src/MainCalculadora.java" 
+<class-diagram version="1.1.8" icons="true" automaticImage="JPEG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true">  
+  <class id="1" language="java" name="CalculadoraPruebas" project="HOJA2" file="/HOJA2/src/CalculadoraPruebas.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="153" width="172" x="196" y="37"/>    
+    <position height="189" width="141" x="229" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="2" language="java" name="Stack" project="HOJA2" file="/HOJA2/src/Stack.java" binary="false" 
+  <class id="2" language="java" name="MainCalculadora" project="HOJA2" file="/HOJA2/src/MainCalculadora.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="205" x="229" y="266"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="3" language="java" name="Stack" project="HOJA2" file="/HOJA2/src/Stack.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="153" width="104" x="119" y="266"/>    
+    <position height="153" width="104" x="237" y="778"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="3" language="java" name="Pruebas" project="HOJA2" file="/HOJA2/src/Pruebas.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="99" width="87" x="408" y="37"/>    
+  <class id="4" language="java" name="StackArrayList" project="HOJA2" file="/HOJA2/src/StackArrayList.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="130" x="41" y="549"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="4">    
+  <class id="5" language="java" name="StackVector" project="HOJA2" file="/HOJA2/src/StackVector.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="115" x="211" y="549"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="6">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="5" name="miStack">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="6" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
+      <attribute id="7" name="calcu"/>      
+      <multiplicity id="8" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <association id="9">    
+    <bendpoint x="356" y="549"/>    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="10" name="miStack"/>      
+      <multiplicity id="11" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="12">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <realization id="13">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <dependency id="14">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
